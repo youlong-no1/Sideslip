@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/country_lvcountry"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:divider="@null" />
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/show_head_toast_bg"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+
+        <com.sideslip.view.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
+	<com.sideslip.SlidingLayer
+        android:id="@+id/slidingLayer1"
+        android:layout_width="@dimen/layer_width"
+        android:layout_height="match_parent"
+	    >
+	    <ListView 
+	        android:id="@+id/list1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:background="#F4F4F4"
+	        android:scrollbars="none"
+	        android:fadingEdge="none"
+	        ></ListView>
+	</com.sideslip.SlidingLayer>
+	<com.sideslip.SlidingLayer
+        android:id="@+id/slidingLayer2"
+        android:layout_width="@dimen/layer_width_2"
+        android:layout_height="match_parent"
+	    >
+	    <ListView 
+	        android:id="@+id/list2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:background="#e1e1e1"
+	        android:scrollbars="none"
+	        android:fadingEdge="none"
+	        ></ListView>
+	</com.sideslip.SlidingLayer>
+</RelativeLayout>
